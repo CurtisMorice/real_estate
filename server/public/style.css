@@ -1,0 +1,18 @@
+#rentCard {
+    background-color: aliceblue;
+    font-family: fantasy;
+    text-shadow: 10px;
+    display: inline-block;
+}
+
+#formInput {
+    background-color: aliceblue;
+}
+
+#rentalPage {
+    background-color: rgb(219, 210, 205);
+}
+
+.card {
+    display: inline-block;
+}

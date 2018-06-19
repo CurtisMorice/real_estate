@@ -1,0 +1,39 @@
+<section ng-controller="AddController as AC">
+    <div id="formInput">
+        <form>
+            <input type="number" ng-model="AC.costIn" placeholder="Price">
+            <input type="number" ng-model="AC.sqftIn" placeholder="Square Feet">
+            <input type="text" ng-model="AC.cityIn" placeholder="City">
+            <select ng-model="AC.typeIn">
+                <option value="sale"> For Sale</option>
+                <option value="rent">For Rent</option>
+        </select>
+            <select ng-model="AC.imageIn">
+                <option value="classic-flats.jpg"> Classical </option>
+                <option value="haunted.png"> HaUnTed</option>
+                <option value="older.jpeg">Old as Dirt</option>
+                <option value="rental.jpeg">Rental </option>
+                <option value="rental2.jpg"> Other Rentals</option>
+                <option value="shiny.jpg"> Sparkly</option>
+                <option value="stony.jpg">Stony</option>
+            </select>
+            <input type="submit" value="INNAPROPRIATE BUTTON" ng-click="AC.addListing()">
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <div class="outputSection">
+        <h2>Newly Added Properties</h2>
+        <br>
+        <div class="row">
+            <div class="col-3>">
+                <div class="card">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>

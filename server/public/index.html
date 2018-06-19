@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/add.controller.js"></script>
+    <script src="scripts/controllers/rent.controller.js"></script>
+    <script src="scripts/controllers/sales.controller.js"></script>
+    <script src="scripts/services/add.services.js"></script>
+    <script src="scripts/services/rent.services.js"></script>
+    <script src="scripts/services/sale.services.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#!/"> Home </a></li>
+                <li><a href="#!/rent"> Rent</a></li>
+                <li><a href="#!/sales"> Sales </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div ng-app="ngApp">
+        <ng-view>
+        </ng-view>
+    </div>
+</body>
+
+</html>

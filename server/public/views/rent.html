@@ -1,0 +1,23 @@
+<section ng-controller="RentController as RC">
+    <div id="rentalPage" class="container">
+        <div ng-repeat="listing in RC.allListings">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="rentCard" class="card">
+                        <div class="card-body">
+                            <img ng-src="/views/images/{{listing.image_path}} " alt="house images" height="475" width="475">
+                            <div>
+                                <h3>{{listing.city}}</h3>
+                                <p>{{listing.cost}}</p>
+                                <p>{{listing.sqft}}</p>
+                                <p>{{listing.type}}</p>
+                                <button class="btn btn-danger" ng-click="RC.deleteListing(listing.id)">DELETE</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
